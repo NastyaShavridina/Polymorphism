@@ -14,15 +14,19 @@ namespace Polymorphism3
     {
         static void Main(string[] args)
         {
-            Plane plane = new Plane(30, 45, 15000000, 800, 150, 2010, 13000);
+            Vehicle plane = new Plane(30, 45, 15000000, 800, 150, 2010, 13000);
 
-            Ship ship = new Ship(30, 50, 10000000, 150, 1000, 2005, "Odessa");
+            Vehicle ship = new Ship(30, 50, 10000000, 150, 1000, 2005, "Odessa");
 
-            Car car = new Car(30, 50, 20000, 150, 5, 2005);
+            Vehicle car = new Car(30, 50, 20000, 150, 5, 2005);
 
             plane.Show();
 
+            Console.ReadLine();
+
             ship.Show();
+
+            Console.ReadLine();
 
             car.Show();
         }

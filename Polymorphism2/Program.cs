@@ -18,15 +18,26 @@ namespace Polymorphism2
     {
         static void Main(string[] args)
         {
-            BadPupil badPupil = new BadPupil("Bob");
+            Pupil badPupil = new BadPupil("Bob");
 
-            ExcelentPupil excelentPupil = new ExcelentPupil("Alice");
+            Pupil excelentPupil = new ExcelentPupil("Alice");
+            
+            Pupil goodPupil = new GoodPupil("Adam");
 
-            GoodPupil goodPupil = new GoodPupil("Adam");
+            Pupil pupil = new GoodPupil("Kate");
 
-            ClassRoom classRoom = new ClassRoom(badPupil, excelentPupil, goodPupil);
+            // 4 Pupil
+            ClassRoom classRoom = new ClassRoom(badPupil, excelentPupil, goodPupil, pupil);
 
             classRoom.Show();
+
+            // 3 Pupil
+
+            ClassRoom classRoom2 = new ClassRoom(badPupil, excelentPupil, goodPupil);
+
+            classRoom.Show();
+
+
         }
     }
 }
